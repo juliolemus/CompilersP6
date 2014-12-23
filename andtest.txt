@@ -1,0 +1,12 @@
+std::cout << "pop %ebx" << std::endl;
+    std::cout << "pop %eax" << std::endl;
+    std::cout << "mov $0, %ecx" << std::endl;
+    std::cout << "cmp %ecx,%eax" << std::endl;
+    std::cout << "je Zero_"<< label << std::endl;
+    std::cout << "cmp %ecx,%ebx" << std::endl;
+    std::cout << "je Zero_"<< label << std::endl;
+    std::cout << "push $1" << std::endl;
+    std::cout << "jmp End_"<< label << std::endl;
+    std::cout << "Zero_" << label << ":" << std::endl;
+    std::cout << "push $0" << std::endl;
+    std::cout << "End_"<< label << ":" << std::endl;
